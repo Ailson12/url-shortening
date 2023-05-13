@@ -32,6 +32,11 @@
   padding: 6px 40px;
 }
 
-.btn:hover {
+.btn:not([disabled='true'], .active):hover {
   background-color: rgba(42, 207, 207, 0.8);
+}
+
+.btn[disabled='true'] {
+  cursor: not-allowed;
+  opacity: 0.75;
 }

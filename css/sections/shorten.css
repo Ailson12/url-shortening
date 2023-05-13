@@ -48,6 +48,10 @@
   align-items: center;
 }
 
+.link-item-actions button.active {
+  background-color: var(--color-2);
+}
+
 @media (max-width: 800px) {
   .shorten-bg {
     flex-direction: column;

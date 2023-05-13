@@ -1,0 +1,65 @@
+#shorten {
+  background: #f0f1f6;
+  box-shadow: inset 0 100px 0 #fff;
+  min-height: 200px;
+}
+
+.shorten-bg {
+  background-color: var(--color-2);
+  padding: 2.5rem;
+  display: flex;
+  gap: 1rem;
+  border-radius: 8px;
+  background-image: url('../../images/bg-shorten-desktop.svg');
+}
+
+.shorten-bg input {
+  flex: 1;
+  padding: 1rem;
+  font-size: 16px;
+  border-radius: inherit;
+}
+
+.links-wrapper {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.link-item {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 6px;
+  padding: 1rem 1.5rem;
+  justify-content: space-between;
+  background-color: var(--color-8);
+}
+
+.link-item p,
+.link-item a {
+  font-size: 18px;
+}
+
+.link-item-actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .shorten-bg {
+    flex-direction: column;
+  }
+
+  .shorten-bg button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .shorten-bg {
+    padding: 1.4rem;
+  }
+}

@@ -1,0 +1,39 @@
+body,
+p,
+ul,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  display: block;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font-size: inherit;
+  cursor: pointer;
+}
+
+button,
+input {
+  border: 0;
+  font-family: inherit;
+}

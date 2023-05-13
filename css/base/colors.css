@@ -1,0 +1,42 @@
+:root {
+  --color-1: #2acfcf;
+  --color-2: #3b3054;
+  --color-3: #f46262;
+  --color-4: #bfbfbf;
+  --color-5: #9e9aa7;
+  --color-6: #35323e;
+  --color-7: #232127;
+  --color-8: #fff;
+}
+
+.color-1 {
+  color: var(--color-1);
+}
+
+.color-2 {
+  color: var(--color-2);
+}
+
+.color-3 {
+  color: var(--color-3);
+}
+
+.color-4 {
+  color: var(--color-4);
+}
+
+.color-5 {
+  color: var(--color-5);
+}
+
+.color-6 {
+  color: var(--color-6);
+}
+
+.color-7 {
+  color: var(--color-7);
+}
+
+.color-8 {
+  color: var(--color-8);
+}

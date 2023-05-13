@@ -1,0 +1,30 @@
+#introduction {
+  min-height: 400px;
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-columns: minmax(200px, 350px) auto;
+}
+
+#introduction h1 {
+  font-size: 48px;
+  max-width: 18ch;
+  line-height: 1.4;
+}
+
+#introduction p {
+  max-width: 44ch;
+  margin-bottom: 1.5rem;
+}
+
+#introduction img {
+  border-radius: 36px;
+  object-fit: cover;
+  object-position: left top;
+}
+
+@media (max-width: 800px) {
+  #introduction {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,133 @@
+#advanced-statistics {
+  background-color: #f0f1f6;
+}
+
+#advanced-statistics h1,
+#advanced-statistics div.container > p {
+  text-align: center;
+}
+
+#advanced-statistics h1 {
+  font-size: 32px;
+  margin-bottom: 0.5rem;
+}
+
+#advanced-statistics div.container > p {
+  max-width: 50ch;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+.statistic-wrapper {
+  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  min-height: 320px;
+  position: relative;
+  justify-content: center;
+}
+
+.statistic-wrapper::after {
+  content: '';
+  height: 8px;
+  left: 25%;
+  right: 0;
+  display: flex;
+  top: 50%;
+  width: 50%;
+  background-color: var(--color-1);
+  position: absolute;
+}
+
+.statistics-box {
+  padding: 2rem;
+  z-index: 2;
+  border-radius: 4px;
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.statistics-box .statistics-icon {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
+  position: absolute;
+  top: -37.5px;
+  background-color: var(--color-2);
+}
+
+.statistics-box h2 {
+  font-size: 18px;
+  margin-top: 22px;
+  margin-bottom: 12px;
+}
+
+.statistics-box p {
+  font-size: 15px;
+}
+
+.statistics-box:nth-child(1) {
+  align-self: flex-start;
+}
+
+.statistics-box:nth-child(2) {
+  align-self: center;
+}
+
+.statistics-box:nth-child(3) {
+  align-self: flex-end;
+}
+
+@media (max-width: 1200px) {
+  .statistic-wrapper {
+    gap: 1.5rem;
+  }
+
+  .statistics-box {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .statistic-wrapper {
+    align-items: stretch;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .statistic-wrapper::after {
+    opacity: 0;
+  }
+
+  .statistics-box {
+    align-self: initial !important;
+  }
+
+  .statistics-box:nth-child(3) {
+    grid-column: 1 / -1;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .statistic-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .statistics-box + .statistics-box {
+    margin-top: 2rem;
+  }
+
+  .statistic-wrapper::after {
+    opacity: 1;
+    width: 12px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+  }
+}

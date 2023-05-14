@@ -51,7 +51,9 @@
 }
 
 .link-item {
-  display: flex;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr auto;
   align-items: center;
   flex-wrap: wrap;
   border-radius: 6px;
@@ -64,6 +66,7 @@
 .link-item p,
 .link-item a {
   font-size: 18px;
+  word-break: break-all;
 }
 
 .link-item-actions {
@@ -84,11 +87,21 @@
 
 @media (max-width: 800px) {
   .shorten-bg {
+    gap: 2rem;
     flex-direction: column;
   }
 
   .shorten-bg button {
     width: 100%;
+  }
+
+  .link-item {
+    grid-template-columns: 1fr;
+  }
+
+  .link-item p,
+  .link-item a {
+    font-size: 1rem;
   }
 }
 

@@ -1,0 +1,14 @@
+{
+  "name": "url-shortening-api",
+  "version": "1.0.0",
+  "description": "Pagina de encurtar links",
+  "main": "index.js",
+  "scripts": {
+    "css:minify": "cleancss --output ./css/styles.min.css ./css/styles.css --with-rebase"
+  },
+  "author": "Ailson Feitosa",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-css-cli": "5.6.2"
+  }
+}

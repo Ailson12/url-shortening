@@ -13,11 +13,34 @@
   background-image: url('../../images/bg-shorten-desktop.svg');
 }
 
-.shorten-bg input {
-  flex: 1;
+#shorten-input {
   padding: 1rem;
+  width: inherit;
   font-size: 16px;
-  border-radius: inherit;
+  border-radius: 8px;
+  flex: 1;
+}
+
+.shorten-input-wrapper {
+  flex: 1;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+.shorten-input-wrapper p {
+  position: absolute;
+  bottom: -30px;
+  opacity: 0;
+  color: var(--color-3);
+}
+
+.shorten-input-wrapper.invalid input {
+  outline: var(--color-3) solid 3px;
+}
+
+.shorten-input-wrapper.invalid p {
+  opacity: 1;
 }
 
 .links-wrapper {
@@ -32,6 +55,7 @@
   align-items: center;
   flex-wrap: wrap;
   border-radius: 6px;
+  box-shadow: 0px 1px 10px 0 #cdcdcd;
   padding: 1rem 1.5rem;
   justify-content: space-between;
   background-color: var(--color-8);
@@ -50,6 +74,12 @@
 
 .link-item-actions button.active {
   background-color: var(--color-2);
+}
+
+#shorten-btn[data-loading='true'] {
+  cursor: wait;
+  opacity: 0.75;
+  background-color: rgba(42, 207, 207, 0.8);
 }
 
 @media (max-width: 800px) {

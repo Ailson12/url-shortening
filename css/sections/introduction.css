@@ -3,7 +3,7 @@
   display: grid;
   align-items: center;
   justify-content: space-between;
-  grid-template-columns: minmax(200px, 350px) auto;
+  grid-template-columns: minmax(250px, 400px) auto;
 }
 
 #introduction h1 {

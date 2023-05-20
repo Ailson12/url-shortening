@@ -89,11 +89,3 @@ Algo que pretendo abordar em outros projetos de uma maneira mais profunda é ace
 
 - Website - [Ailson Feitosa](https://github.com/ailson12)
 - Instagram - [Ailson Feitosa](https://www.instagram.com/roberto_feitosa06)
-
-<style>
-.image-expansible {
-  object-fit: cover;
-  object-position: top;
-  max-height: 800px;
-}
-</style>
